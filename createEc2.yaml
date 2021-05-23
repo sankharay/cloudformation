@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: ---
+Resources: 
+  myEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      KeyName: key.pem
+      ImageId: "ami-0d5eff06f840b45e9"
+      InstanceType: t2.micro
+      Monitoring: false
+      Tags:
+        - Key: key
+          Value: 'first ec2'
